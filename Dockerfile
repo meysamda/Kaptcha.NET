@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 5000
 ENV ASPNETCORE_URLS=http://+:5000
-RUN sudo apt install libc6-dev && sudo apt install libgdiplus
+RUN  apt update && apt install libc6-dev &&  apt install libgdiplus
 
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
