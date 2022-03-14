@@ -60,7 +60,7 @@ spec:
     secretName: tech1a-tls
 
   rules:
-    - host: captcha.tech1a.co
+    - host: dev-captcha.tech1a.co
       http:
         paths:
           - path: /swagger(/|$)(.*)
